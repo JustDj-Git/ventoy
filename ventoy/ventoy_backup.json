@@ -1,0 +1,129 @@
+{
+    "control":[
+        { "VTOY_DEFAULT_MENU_MODE": "1" },
+        { "VTOY_TREE_VIEW_MENU_STYLE": "1" },
+        { "VTOY_SORT_CASE_SENSITIVE": "1" },
+        { "VTOY_DEFAULT_SEARCH_ROOT": "/OS" }
+    ],
+    "theme":{
+        "file": "/ventoy/themes/dedsec/theme.txt",
+        "gfxmode": "max",
+        "ventoy_left": "0%",
+        "ventoy_top": "0%",
+        "ventoy_color": "#000000",
+        "fonts":[
+            "/ventoy/themes/dedsec/Poppins-14.pf2",
+            "/ventoy/themes/dedsec/Poppins-16.pf2",
+            "/ventoy/themes/dedsec/Poppins-18.pf2",
+            "/ventoy/themes/dedsec/Poppins-20.pf2",
+            "/ventoy/themes/dedsec/Poppins-48.pf2",
+            "/ventoy/themes/dedsec/terminus-12.pf2",
+            "/ventoy/themes/dedsec/terminus-14.pf2",
+            "/ventoy/themes/dedsec/terminus-16.pf2"
+        ]
+    },
+    "menu_alias":[
+        {
+            "dir": "/OS/Linux",
+            "alias": "Linux"
+        },
+        {
+            "dir": "/OS/Win",
+            "alias": "Windows"
+        },
+        {
+            "dir": "/OS/PE",
+            "alias": "Recovery"
+        }
+    ],
+    "menu_class":[
+        {
+            "key": "Win10",
+            "class": "win10"
+        },
+        {
+            "key": "Win11",
+            "class": "win11"
+        },
+        {
+            "key": "arch",
+            "class": "arch"
+        },
+        {
+            "key": "proxmox",
+            "class": "proxmox"
+        },
+        {
+            "dir": "/OS/Linux",
+            "class": "linux"
+        },
+        {
+            "dir": "/OS/PE",
+            "class": "SystemRescueCD"
+        },
+        {
+            "dir": "/OS/Win",
+            "class": "windows"
+        },
+        {
+            "dir": "/OS/Win/Win10",
+            "class": "win10"
+        },
+        {
+            "dir": "/OS/Win/Win11",
+            "class": "win11"
+        },
+        {
+            "key": "WinPE",
+            "class": "winpe"
+        },
+        {
+            "dir": "/OS/Linux/Atomic",
+            "class": "atom"
+        },
+        {
+            "key": "Fedora",
+            "class": "fedora"
+        },
+        {
+            "key": "nixos",
+            "class": "nixos"
+        },
+        {
+            "key": "openSUSE",
+            "class": "opensuse"
+        },
+        {
+            "key": "bazzite",
+            "class": "bazzite"
+        },
+        {
+            "key": "nobara",
+            "class": "nobara"
+        },
+        {
+            "key": "Nobara",
+            "class": "nobara"
+        }
+    ],
+    "auto_install":[
+        {
+            "parent": "/OS/Win/Win10",
+            "template":[
+                "/unattend/Win10/Home.xml",
+                "/unattend/Win10/Pro.xml",
+                "/unattend/Win10/Home_USER.xml",
+                "/unattend/Win10/Pro_USER.xml"
+            ]
+        },
+        {
+            "parent": "/OS/Win/Win11",
+            "template":[
+                "/unattend/Win11/Home.xml",
+                "/unattend/Win11/Pro.xml",
+                "/unattend/Win11/Home_USER.xml",
+                "/unattend/Win11/Pro_USER.xml"
+            ]
+        }
+    ]
+}
